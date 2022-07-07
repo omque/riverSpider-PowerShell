@@ -3,7 +3,15 @@
 A native PowerShell implementation of Tak's riverSpider tool for Windows PCs
 
 ## Overview
-This project is based off of Dr. Tak Auyeung's riverSpider tool. It is critical that you read the original README included with the Linux version of this project for full context. The below will only include instructions on setup and execution of the PowerShell version.
+This project is based off of Dr. Tak Auyeung's riverSpider tool. It is critical that you read the original README included with the Linux version of this project for full context. The below will only include instructions on setup and execution of the PowerShell version. 
+
+Context and background information is at the end of this README. 
+
+## Who wrote this?
+I am a former student of Tak's for CISP 310 from Spring 2022. I wrote this program when I noticed classmates were struggling with using riverSpider on their Windows PCs and felt that I could use the Bash version of this script as an opportunity to learn more about PowerShell in my CS education.
+
+## Updates and Requests
+If you have requested updates or find an error, please open an [issue](https://github.com/omque/riverSpider-PowerShell/issues) and I will attend to it as fast as I can. You may also reach me on [Discord](https://www.discordapp.com/users/481751812236640256).
 
 ## What is riverSpider?
 
@@ -12,28 +20,6 @@ This project is based off of Dr. Tak Auyeung's riverSpider tool. It is critical 
 riverSpider was originally intended as a far more ambitious project to automate certain tasks using the web interface to certain college resources. 2nd factor authentication makes most of the objectives unattainable. 
 
 Anyway, the project *degenerated* to something that is simple and only works for CISP310. This projects now implements the basic function to submit a program written in TTPASM (Tak's Toy Processor ASseMbly language) to an assembler implemented in Google Sheets, downloads the RAM file back, runs that in LogiSim, then submits the logged trace back to the Google Sheet to have the raw log file interpreted and analyzed to show human readable instruction executions.
-
-## What is PowerShell?
-
-Much like Unix has "Bash" (Bourne Again Shell) as a shell and scripting language, Microsoft has implemented a similar version for its Windows operating system known as PowerShell. Through specific commands, users are able to execute scripts which can automate several tasks. PowerShell is strongly supported by Microsoft and is used by programmers, system administrators, and network engineers.
-
-By default Windows comes with PowerShell 5.x. This program requires **at least** PowerShell **7.2.5.**
-
-PowerShell has been open sourced and has been written for multiple operating systems. riverSpider-PowerShell is only intended to work on Windows operating systems from a PowerShell 7.x terminal. Linux and macOS versions of PowerShell have not been tested, nor are likely to work due to missing components that were not ported over from Windows. If you are on Unix based operating system, please use the original version of riverSpider written in Bash.
-
-## PowerShell vs. "Command Prompt"
-
-PowerShell is NOT the "Windows Command Prompt (CMD)". These are two separate programs. CMD was the original shell program developed by Microsoft in 1987 and lacks many of the modern features offered by PowerShell. As of 2016, PowerShell replaced CMD as the default shell on Windows 10 and further.
-
-Please make sure you are using a PowerShell terminal.
-
-## Why a different version for Windows?
-
-riverSpider was originally written in Bash, for Linux. While Unix based operating systems like Linux and macOS are able to run the program, Windows users must either make use of a virtualized version of Linux in order to access the same tool. This would either be through the Windows Subsystem for Linux (WSL) or a virtual machine. 
-
-Despite this, the setup time is significant and the process is prone to error which can be off putting to students who are unfamiliar with this tooling. Virtual machines also require significant resources which may not be available on certain hardware. 
-
-riverSpider-PowerShell is a "Windows native" implementation of the original riverSpider. No virtualization, outside "DLL" files, or third party tooling (aside from Java and PowerShell) are required. This makes the process fast and efficient.
 
 ## Prerequisites
 
@@ -46,7 +32,7 @@ You will need the following for this project to work:
 		* [Notepad++](https://notepad-plus-plus.org/) (Free)
 		* [Sublime Text](https://www.sublimetext.com/) (Paid)
 		* [VSCode](https://code.visualstudio.com/) (Free)
-* Requisite files for riverSpider including `alu.circ`, `logisim310.jar`, `processorXXXX.circ`, `regbank.circ`
+* Requisite files for riverSpider: `alu.circ`, `logisim310.jar`, `processorXXXX.circ`, `regbank.circ`
 	* These files are subject to updates and are not included in this repository, but are necessary for the script to function. 
 	* Make sure you have the latest versions of these files from Tak.
 * [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) 
@@ -117,3 +103,25 @@ You will need the following for this project to work:
 		3. PowerShell supports tab completion. You can write partial words and press `Tab` to auto complete filenames and directories.
 	3. When in the directory type: `.\submit.ps1 test.ttpasm`
 	4. The test code in `test.ttpasm` should be uploaded and the Analysis tab should be populated with diagnostic information.
+	
+## What is PowerShell?
+
+Much like Unix has "Bash" (Bourne Again Shell) as a shell and scripting language, Microsoft has implemented a similar version for its Windows operating system known as PowerShell. Through specific commands, users are able to execute scripts which can automate several tasks. PowerShell is strongly supported by Microsoft and is used by programmers, system administrators, and network engineers.
+
+By default Windows comes with PowerShell 5.x. This program requires **at least** PowerShell **7.2.5.**
+
+PowerShell has been open sourced and has been written for multiple operating systems. riverSpider-PowerShell is only intended to work on Windows operating systems from a PowerShell 7.x terminal. Linux and macOS versions of PowerShell have not been tested, nor are likely to work due to missing components that were not ported over from Windows. If you are on Unix based operating system, please use the original version of riverSpider written in Bash.
+
+## PowerShell vs. "Command Prompt"
+
+PowerShell is NOT the "Windows Command Prompt (CMD)". These are two separate programs. CMD was the original shell program developed by Microsoft in 1987 and lacks many of the modern features offered by PowerShell. As of 2016, PowerShell replaced CMD as the default shell on Windows 10 and further.
+
+Please make sure you are using a PowerShell terminal.
+
+## Why a different version for Windows?
+
+riverSpider was originally written in Bash, for Linux. While Unix based operating systems like Linux and macOS are able to run the program, Windows users must either make use of a virtualized version of Linux in order to access the same tool. This would either be through the Windows Subsystem for Linux (WSL) or a virtual machine. 
+
+Despite this, the setup time is significant and the process is prone to error which I found was off putting to students who are unfamiliar with this tooling. Virtual machines also require significant resources which may not be available on certain hardware. 
+
+riverSpider-PowerShell is a "Windows native" implementation of the original riverSpider. No virtualization, outside "DLL" files, or third party tooling (aside from Java and PowerShell) are required. This makes the process fast and efficient.
