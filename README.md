@@ -8,7 +8,7 @@ This project is based off of Dr. Tak Auyeung's riverSpider tool. It is critical 
 Context and background information is at the end of this README. 
 
 ## Who wrote this?
-I am a former student of Tak's for CISP 310 from Spring 2022. I wrote this program when I noticed classmates were struggling with using riverSpider on their Windows PCs and felt that I could use the Bash version of this script as an opportunity to learn more about PowerShell in my CS education.
+I am a former student of Tak's for CISP 310 from Spring 2022. I wrote this program when I noticed classmates were struggling with using riverSpider on their Windows PCs and felt that I could use the Bash version of this script as an opportunity to learn more about PowerShell and help future students use this tool. I have learned...that I am not a big fan of PowerShell 🤷🏽‍♂️.
 
 ## Updates and Requests
 If you have requested updates or find an error, please open an [issue](https://github.com/omque/riverSpider-PowerShell/issues) and I will attend to it as fast as I can. You may also reach me on [Discord](https://www.discordapp.com/users/481751812236640256).
@@ -110,7 +110,9 @@ Much like Unix has "Bash" (Bourne Again Shell) as a shell and scripting language
 
 By default Windows comes with PowerShell 5.x. This program requires **at least** PowerShell **7.2.5.**
 
-PowerShell has been open sourced and has been written for multiple operating systems. riverSpider-PowerShell is only intended to work on Windows operating systems from a PowerShell 7.x terminal. Linux and macOS versions of PowerShell have not been tested, nor are likely to work due to missing components that were not ported over from Windows. If you are on Unix based operating system, please use the original version of riverSpider written in Bash.
+PowerShell has been open sourced and has been written for multiple operating systems. riverSpider-PowerShell is only intended to work on Windows operating systems from a PowerShell 7.x terminal. Linux and macOS versions of PowerShell have not been tested, nor are likely to work due to missing components that were not ported over from Windows. 
+
+If you are on Unix based operating system, please use the original version of riverSpider written in Bash.
 
 ## PowerShell vs. "Command Prompt"
 
