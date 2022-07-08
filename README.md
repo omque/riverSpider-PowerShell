@@ -44,7 +44,7 @@ You will need the following for this project to work:
 
 ## Installation
 1. Install the necessary prerequisite software following the default installation settings.
-2. Download riverSpider - PowerShell and unzip to your preferred directory.
+2. Download riverSpider - PowerShell and unzip to your preferred directory. You can download a ZIP file from the drop-down menu at the top of this repo.
 3. Download riverSpider (the Bash version) and copy the following files to your riverSpider-PowerShell directory:
     
     1. `alu.circ`
