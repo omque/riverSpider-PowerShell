@@ -3,7 +3,7 @@
 A native PowerShell implementation of Tak's riverSpider tool for Windows PCs
 
 ## Overview
-This project is based off of Dr. Tak Auyeung's riverSpider tool. It is critical that you read the original README included with the Linux version of this project for full context. The below will only include instructions on setup and execution of the PowerShell version. 
+This project is based off of [Dr. Tak Auyeung's](https://arc.losrios.edu/about-us/contact-us/faculty-and-staff-directory/tak-auyeung) riverSpider tool. It is critical that you read the original README included with the Linux version of this project for full context. The below will only include instructions on setup and execution of the PowerShell version. 
 
 Context and background information is at the end of this README. 
 
