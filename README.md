@@ -1,11 +1,21 @@
 ## riverSpider-PowerShell 
 
-A native PowerShell implementation of Tak's riverSpider tool for Windows PCs
+A native PowerShell implementation of Tak's riverSpider tool for Windows PCs.
 
 ## Overview
 This project is based off of [Dr. Tak Auyeung's](https://arc.losrios.edu/about-us/contact-us/faculty-and-staff-directory/tak-auyeung) riverSpider tool. It is critical that you read the original README included with the Linux version of this project for full context. The below will only include instructions on setup and execution of the PowerShell version. 
 
 Context and background information is at the end of this README. 
+
+## Why a different version for Windows?
+
+In short: It is much faster.
+
+riverSpider was originally written in Bash, for Linux. While Unix based operating systems like Linux and macOS are able to run the program, Windows users must either make use of a virtualized version of Linux in order to access the same tool. This would either be through the Windows Subsystem for Linux (WSL) or a virtual machine. 
+
+Despite this, the setup time is significant and the process is prone to error which I found was off putting to students who are unfamiliar with this tooling. Virtual machines also require significant resources which may not be available on certain hardware. 
+
+riverSpider-PowerShell is a "Windows native" implementation of the original riverSpider. No virtualization, outside "DLL" files, or third party tooling (aside from Java and PowerShell) are required. This makes the process fast and efficient.
 
 ## Who wrote this?
 I am a former student of Tak's for CISP 310 from Spring 2022. I wrote this program when I noticed classmates were struggling with using riverSpider on their Windows PCs and felt that I could use the Bash version of this script as an opportunity to learn more about PowerShell and help future students use this tool. 
@@ -122,10 +132,4 @@ PowerShell is NOT the "Windows Command Prompt (CMD)". These are two separate pro
 
 Please make sure you are using a PowerShell terminal.
 
-## Why a different version for Windows?
 
-riverSpider was originally written in Bash, for Linux. While Unix based operating systems like Linux and macOS are able to run the program, Windows users must either make use of a virtualized version of Linux in order to access the same tool. This would either be through the Windows Subsystem for Linux (WSL) or a virtual machine. 
-
-Despite this, the setup time is significant and the process is prone to error which I found was off putting to students who are unfamiliar with this tooling. Virtual machines also require significant resources which may not be available on certain hardware. 
-
-riverSpider-PowerShell is a "Windows native" implementation of the original riverSpider. No virtualization, outside "DLL" files, or third party tooling (aside from Java and PowerShell) are required. This makes the process fast and efficient.
